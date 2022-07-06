@@ -1,24 +1,25 @@
-from xmlrpc.client import FastParser
-
-
 class Plant:
-    def (self, watered, alive, fruit):
-        self.beenWatered = watered
-        self.isAlive = alive
-        self.hasFruit = fruit
+    def __init__(self):
+        self.watered = False
+        self.is_alive = True
+        self.has_fruit = False
 
-class Racoon:
-    def __init__(self, eats):
-        self.hasEaten = eats
+class Racoon():
+    def eats_plants():
+        eats_plants = False
 
-class Human:
-    def __init__(self, waters, picks):
-        self.isWatering = waters
-        self.isPicking = picks
+class Human():
+    def waters_plants():
+        water_plants = True
 
-plant1 = Plant()
-plant1.beenWatered = False
-print(plant1.beenWatered) 
+    def picks_fruit():
+        picks_friut = False
+
+p1 = Plant()
+h1 = Human()
+r1 = Racoon()
+print("Plant is watered?", p1.watered)
+print("Plant has fruit?", p1.has_fruit)
 
 
-
+    
